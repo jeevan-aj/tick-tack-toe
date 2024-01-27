@@ -7,20 +7,77 @@
 .title{
   text-align: center;
   margin-top:40px;
+  margin-bottom:50px;
 }
 
 .square_row{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding: 0px 50px;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+.square:nth-child(1-3){
+  margin-top:50px;
 }
 
 .square{
   margin:1px;
   min-height: 100px;
+  
 }
 
 
 
+.strike {
+  position: absolute;
+  background-color: darkorange;
+}
+
+.strike-row-1 {
+  width: 100%;
+  height: 4px;
+  top: 15%;
+}
+.strike-row-2 {
+  width: 100%;
+  height: 4px;
+  top: 48%;
+}
+.strike-row-3 {
+  width: 100%;
+  height: 4px;
+  top: 83%;
+}
+.strike-column-1 {
+  height: 100%;
+  width: 4px;
+  left: 15%;
+}
+.strike-column-2 {
+  height: 100%;
+  width: 4px;
+  left: 48%;
+}
+.strike-column-3 {
+  height: 100%;
+  width: 4px;
+  left: 83%;
+}
+.strike-diagonal-1 {
+  width: 90%;
+  height: 4px;
+  top: 50%;
+  left: 5%;
+  transform: skewY(45deg);
+}
+.strike-diagonal-2 {
+  width: 90%;
+  height: 4px;
+  top: 50%;
+  left: 5%;
+  transform: skewY(-45deg);
+}
 
 
